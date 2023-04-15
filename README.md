@@ -25,7 +25,7 @@ Purpose : To log the preempte and complete context switch.
 2. Task 2: Prio = 2,compTime = 3,Period = 6.
 
 
-![1](/image/ListInser.jpg =50%)
+![1](/image/ListInser.jpg)
 ![2](/image/ListPrint.jpg)
 
 Simulation result:
@@ -66,7 +66,12 @@ static void OS_SchededEDF(void)
 }
 ```
 ### Simulate 2&3 Task parameter setting:
+1. Task1 compTime = 1, Period = 3  Task2 compTime = 3 Period = 5
+2. Task1 compTime = 1, Period = 4  Task2 compTime = 2 Period = 5, Task3 compTime = 2 Period = 10
 
+Simulation result:
+![4](/image/edf_task2.jpg)
+![5](/image/edf_task3.jpg)
 
 
 
