@@ -73,9 +73,23 @@ Simulation result:
 ![4](/image/edf_task2.jpg)
 ![5](/image/edf_task3.jpg)
 
+### Ceiling Priority Protocol(CPP) resource
+Purpose : Original Mutex algorithm is PIP (Priority Inheritance Priority) to change the CPP algorithm.
 
+1. Modify uCOS_II.H file to add new Linklist Node 
+2. Add new node struct data int resource index.
+    OS_EXT        Mutex_store[2];
+    OS_EXT 	*Node 		head2;
+    Create ```Node* ListInsertResource(Node *head, int state, int ticks, int prio_cur, int prio_next)``` protype function.
 
+In OS_MUTEX.C file
+1. Modify ```OSMutexPend(OS_EVENT *pevent, INT16U timeout, INT8U *err)``` function call.
+2. Modify ```OSMutexPost(OS_EVENT *pevent, INT16U timeout, INT8U *err)``` function call.
+3. Because the 2 Mutex lock will lost original mutex priority so need to restore ```Mutex_store``` array. 
 
+Simulate result:
+![6](/image/cpp_task2.jpg)
+![7](/image/cpp_task3.jpg)
 
 
 
