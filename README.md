@@ -25,8 +25,8 @@ Purpose : To log the preempte and complete context switch.
 2. Task 2: Prio = 2,compTime = 3,Period = 6.
 
 
-![1](/image/ListInser.jpg 50x50)
-![2](/image/ListPrint.jpg 50x50)
+![1](/image/ListInser.jpg =50%)
+![2](/image/ListPrint.jpg)
 
 Simulation result:
 ![3](/image/rm_task2.jpg)
