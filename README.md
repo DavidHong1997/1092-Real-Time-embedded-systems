@@ -45,7 +45,7 @@ In OS_CORE.C file
 2. Add new TCB data compTime & deadline.
     `ptcb->compTime = compTime;`
     `ptcb->deadline = deadline;`
-3. Modify static void `OS_InitTaskStat(void)` to enable `OSTaskCreate` function because it will bug.
+3. Modify `static void OS_InitTaskStat(void)` to disable `OSTaskCreate` function because it will bug.
 
 In OS_CORE.C file
 1. Modify `OSIntExit()` and `OSStart()` function to use `OS_SchededEDF()` function call; 
