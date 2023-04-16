@@ -14,7 +14,7 @@ Use command line：
 ### Rate Monotonic Scheduling (RM)
 Purpose : To log the preempte and complete context switch.
 1. Modify uCOS_II.H file 
-2. Create list struct and global head node(baed on linklist to log data)
+2. Create list struct and global head node(based on linklist to log data)
 3. Add `OS_EXT *Node head`;
 4. Modify OS_CORE.C file 
 5. Add `OSTCBCur->compTime--` in `OS_TimeTick()` to consume time
